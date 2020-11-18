@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>메세지 수정</h1>
+        <form method="post" action="/modify_msg">
+            <table border="1">
+                <tr>
+                    <td>번호</td>
+                    <td><input type="text" name="msg_id" value="{{msg.0}}" readonly="readonly"></td>
+                </tr>
+                <tr>
+                    <td>내용</td>
+                    <td>
+                        <textarea name="msg_text" rows="20">{{msg.1}}</textarea>
+                    </td>
+                </tr>
+            </table>
+            <button type="submit">메세지 수정</button>
+        </form>
+    </body>
+</html>
